@@ -40,6 +40,7 @@ async def on_command_error(ctx, error):
       else:
         await ctx.send(embed=discord.Embed(title="🚫 오류 발생",description=f"[에러] : {error}",timestamp=datetime.datetime.now(pytz.timezone('UTC')), color=0xCCFFFF))
     print(error)
+
 @bot.command()
 async def 도움말(ctx):
     embed = discord.Embed(title=f"📌 {bot.user.name} 명령어", color=0xCCFFFF)
